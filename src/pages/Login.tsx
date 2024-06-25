@@ -21,7 +21,7 @@ const Login: React.FC = () => {
             setErrorMessage('');
             console.log('Username:', username);
             console.log('Password:', password);
-            navigate('/dashboard');
+            navigate('/home');
         } else {
             setErrorMessage('Credenciales incorrectas');
         }
