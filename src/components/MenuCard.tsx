@@ -6,17 +6,17 @@ import './MenuCard.css';
 
 interface MenuCardProps {
   title: string;
-  icon: React.ReactNode;
   path: string;
 }
 
-const MenuCard: React.FC<MenuCardProps> = ({ title, icon, path }) => {
+const MenuCard: React.FC<MenuCardProps> = ({ title, path }) => {
   const navigate = useNavigate();
 
   return (
     <Card onClick={() => navigate(path)} className="menu-card">
       <CardContent className="card-content">
-        {icon}
+      <img src="/assets/images/power_bi_icon.png" alt="Power BI" className="card-content-icon" 
+        style={{ width: '1.2rem', height: 'auto', marginRight: '1rem' }}/>
         <Typography variant="h6" className="custom-typography">
           {title}
         </Typography>
@@ -27,7 +27,6 @@ const MenuCard: React.FC<MenuCardProps> = ({ title, icon, path }) => {
 
 MenuCard.propTypes = {
   title: PropTypes.string.isRequired,
-  icon: PropTypes.node.isRequired,
   path: PropTypes.string.isRequired,
 };
 

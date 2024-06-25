@@ -28,7 +28,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #f7f7f8;
-  display: flex;
 }
 
 h1 {
@@ -69,7 +68,5 @@ button:focus-visible {
 }
 
 @media (min-width: 600px) {
-  body {
-    display: inline;
-  }
+  
 }

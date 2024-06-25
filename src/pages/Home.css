@@ -5,15 +5,4 @@
   max-width: 90%;
 }
 
-/* Larger screens */
-@media (min-width: 37.5rem) {
-  .card {
-    margin-bottom: 1.5rem;
-  }
-}
 
-@media (min-width: 60rem) {
-  .card {
-    margin-bottom: 2rem;
-  }
-}
